@@ -7,7 +7,7 @@ This documentation explains how to send data daily (M-F) to SDCOE using PowerSch
 This process ensures that updates made in PowerSchool are automatically reﬂected in SDCOE Network Dashboards and Applications by the next business day.
 
 ## Data Types --- Description
-***Student*** --- Used to initially add students to the network and to continually update their records with Socio-Economical status (if using), Plan 504 participation, English Language Acquisition (ELA) status and Special Education (IEP) status.
+***Student*** --- Used to initially add students to the network and to continually update their records with Socio-Economical status (if using), Plan 504 participation, English Language Acquisition (ELA) status and Special Education (IEP) status.<br>
 ***Attendance*** --- Used to identify attendance summaries for students.
 
 ⚠ PowerSchool will serve as the source of truth and continue to be the authoritative source for your district data. All ﬁelds in SDCOE applications that are automated from PowerSchool will be updated automatically using data in PowerSchool on a nightly basis. If you need to make any changes to these ﬁelds, please update them in PowerSchool. SDCOE applications do not synchronize data back into PowerSchool.
