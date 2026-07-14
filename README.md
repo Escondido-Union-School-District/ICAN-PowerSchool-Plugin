@@ -22,7 +22,7 @@ This process ensures that updates made in PowerSchool are automatically reﬂect
     * Port: 22
     * Authentication Type: Password
     * Username and Password: Please contact the SDCOE ICAN team when you are ready to receive SFTP credentials for your district.
-    * Remote Path: /cohort6
+    * Remote Path: /*subdirectory* (use the subdirectory name provided by SDCOE)
     * Allow upload: check the box
 3.	Click the “Test Connection” button. If the connection is successful, a green “Connection Successful” bar will appear.
     * Potential errors
