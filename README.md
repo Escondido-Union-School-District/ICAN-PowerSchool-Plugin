@@ -148,7 +148,7 @@ $enpath = 'C:\Users\username\configs\PowerSchoolRO.txt'
 $EncryptedPass = Get-Content -Path $enpath
 
 Add-Type -AssemblyName System.Data.OracleClient
-$username = "PSNavigator"
+$username = "SISusername"
 $password = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR((ConvertTo-SecureString $EncryptedPass)))
 $datasource = "yourDBhost:1521/PSPRODDB"
 $ConnectionString = "User Id=$username;Password=$password;Data Source=$datasource"
@@ -181,7 +181,7 @@ $portnum = '22'
 
 #The code below leverages WinSCP version 5.1.0; extensive documentation exists on WinSCP .NET libraries online
 cd C:\Users\username\WS510
-Add-Type -Path "C:\Users\umraaadmin\WS510\WinSCPnet.dll"
+Add-Type -Path "C:\Users\username\WS510\WinSCPnet.dll"
 $sessionOptions = New-Object WinSCP.SessionOptions -Property @{
     Protocol = [WinSCP.Protocol]::Sftp
     HostName = $hostname
@@ -197,7 +197,7 @@ $transferOptions = New-Object WinSCP.TransferOptions
 $transferOptions.FilePermissions = $null
 $transferOptions.PreserveTimestamp = $false
 
-Send-WinSCPItem -WinSCPSession $session -LocalPath "$filepath" -RemotePath '/cohort6/' -TransferOptions $transferOptions
+Send-WinSCPItem -WinSCPSession $session -LocalPath "$filepath" -RemotePath '/subdirectory/' -TransferOptions $transferOptions
 
 $session.Close()
 
